@@ -1,0 +1,58 @@
+.sub-menu-title {
+  margin-left: 5px;
+}
+
+.sub {
+  display: inline-block;
+  margin-left: 10px;
+  
+}
+
+.sub-title {
+  text-align: left;
+}
+
+.sub-des {
+  padding-bottom: 50px;
+}
+
+.dot-line {
+  border-bottom: dotted white 1px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.background {
+  background-color:#161616;
+  filter: blur(8px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.foreground {
+  backdrop-filter: blur(10px);
+}
+
+.choice-img {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+}
+
+.single {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.clear {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.wrapper {
+  margin-left: 50px;
+}

@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <div class="background"></div>
+
+  <div class="foreground">
+    <div class="row sub-menu-title">
+      <h3 style="color: white">{{subTitle}}</h3>
+    </div>
+
+    <div class="row" style="color: white;" *ngFor="let menuItem of menuItems; index as i">
+
+      <div class="sub sub-title col-4">{{menuItem.title}}</div>
+      <div class="sub dot-line col-6"></div>
+      <div class="sub sub-price col-2">{{menuItem.price}}</div>
+    </div>
+
+  </div>
+</div>

@@ -5,8 +5,9 @@ import {SubMenuComponent} from './component/sub-menu/sub-menu.component';
 
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: 'submenu/:title', component: SubMenuComponent},
+  {path: 'home', component: HomeComponent, data: {animation: 'HomePage'}},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'submenu/:title', component: SubMenuComponent, data: {animation: 'MenuPage'}},
 ];
 
 @NgModule({

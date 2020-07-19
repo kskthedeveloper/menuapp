@@ -9,7 +9,11 @@
     <h2 style="color: white">{{title}}</h2>
   </div>
 
-  <div class="row">
-    <p style="color: white">Submenu1 ............... 1000</p>
-  </div>
+  <app-sub-menu-choice subTitle="AJI'S CHOICE" [menuItems]="fmenuItems"></app-sub-menu-choice>
+
+  <div style="margin: 20px;"></div>
+
+  <app-sub-menu-row subTitle="CHICKEN" [menuItems]="smenuItems"></app-sub-menu-row>
+
 </div>
+

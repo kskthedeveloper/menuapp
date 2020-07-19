@@ -1,0 +1,36 @@
+.sub-menu-title {
+  margin-left: 5px;
+}
+
+.sub {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  text-align: left;
+}
+
+.sub-price {
+  text-align: right;
+}
+
+.dot-line {
+  border-bottom: dotted white 1px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.background {
+  background-color:#161616;
+  filter: blur(8px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.foreground {
+  backdrop-filter: blur(10px);
+}

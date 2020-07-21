@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SubMenuItem } from 'src/app/models/sub-menu-item';
+import { faHome, faAngleDoubleLeft  } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-sub-menu',
@@ -8,6 +9,8 @@ import { SubMenuItem } from 'src/app/models/sub-menu-item';
   styleUrls: ['./sub-menu.component.scss']
 })
 export class SubMenuComponent implements OnInit {
+
+  faCoffee = faAngleDoubleLeft ;
 
   smenuItems: SubMenuItem[] = [
     new SubMenuItem('Appetizers', 'https://www.delonghi.com/Global/recipes/multifry/97.jpg', 1000, ""),

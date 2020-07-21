@@ -8,6 +8,7 @@ import { SubMenuComponent } from './component/sub-menu/sub-menu.component';
 import { SubMenuRowComponent } from './component/sub-menu-row/sub-menu-row.component';
 import { SubMenuChoiceComponent } from './component/sub-menu-choice/sub-menu-choice.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

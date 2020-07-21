@@ -20,3 +20,12 @@
 .bggrey {
   background-color: rgb(228, 21, 21);
 }
+
+.back-nav {
+  position: fixed;
+  top: 0px;
+  height: 45px;
+  width: 100%;
+  z-index: 10000;
+  background-color: #2e2e2e;
+}

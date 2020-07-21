@@ -9,6 +9,9 @@ import { SubMenuRowComponent } from './component/sub-menu-row/sub-menu-row.compo
 import { SubMenuChoiceComponent } from './component/sub-menu-choice/sub-menu-choice.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SubMenuFancyChoiceComponent } from './component/sub-menu-fancy-choice/sub-menu-fancy-choice.component';
+import { SubMenuHorizontalLargeCardComponent } from './component/sub-menu-horizontal-large-card/sub-menu-horizontal-large-card.component';
+import { SubMenuVerticalLargeCardComponent } from './component/sub-menu-vertical-large-card/sub-menu-vertical-large-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HomeComponent,
     SubMenuComponent,
     SubMenuRowComponent,
-    SubMenuChoiceComponent
+    SubMenuChoiceComponent,
+    SubMenuFancyChoiceComponent,
+    SubMenuHorizontalLargeCardComponent,
+    SubMenuVerticalLargeCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
   <div class="back-nav">
     <a [routerLink]="['/home']" style="color: white">
-      <fa-icon style="font-size: 30px; padding: 20px;" [icon]="faCoffee"></fa-icon>
+      <fa-icon style="font-size: 30px; padding: 10px;" [icon]="faCoffee"></fa-icon>
     </a>
   </div>
 
@@ -13,8 +13,17 @@
   <app-sub-menu-choice subTitle="AJI'S CHOICE" [menuItems]="fmenuItems"></app-sub-menu-choice>
 
   <div style="margin: 20px;"></div>
-
   <app-sub-menu-row subTitle="CHICKEN" [menuItems]="smenuItems"></app-sub-menu-row>
+
+  <div style="margin: 20px;"></div>
+  <app-sub-menu-fancy-choice subTitle="FANCY CHOICE" [menuItems]="fancyMenuItems"></app-sub-menu-fancy-choice>
+
+  <div style="margin: 20px;"></div>
+  <app-sub-menu-vertical-large-card subTitle="VERTICAL CARD CHOICE" [menuItems]="fancyMenuItems"></app-sub-menu-vertical-large-card>
+
+  <div style="margin: 20px;"></div>
+  <app-sub-menu-horizontal-large-card subTitle="HORIZONTAL CHOICE" [menuItems]="fancyHorizontalMenuItems"></app-sub-menu-horizontal-large-card>
+
 
 </div>
 

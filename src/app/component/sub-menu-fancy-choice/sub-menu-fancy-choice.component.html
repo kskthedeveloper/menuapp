@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <div class="background"></div>
+
+  <div class="foreground">
+    <div class="row sub-menu-title">
+      <h3 style="color: white">{{subTitle}}</h3>
+    </div>
+
+    <div class="row" *ngFor="let menuItem of menuItems; index as i">
+    <!-- <div class="row"> -->
+
+      <div class="single_menu">
+        <img src="{{menuItem.imageUrl}}">
+        <div class="menu_content">
+          <h4>{{menuItem.title}} <span>{{menuItem.price}}</span></h4>
+          <p>{{menuItem.description}}</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

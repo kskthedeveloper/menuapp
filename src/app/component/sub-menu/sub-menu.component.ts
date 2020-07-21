@@ -28,6 +28,20 @@ export class SubMenuComponent implements OnInit {
     new SubMenuItem('Chicken Barbecue', 'https://www.delonghi.com/Global/recipes/multifry/97.jpg', 2000, 'Made with fresh'),
   ];
 
+  fancyMenuItems: SubMenuItem[] = [
+    new SubMenuItem('12" Pizza', 'https://i.imgur.com/Aowufa1.jpg', 1000, 'Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis'),
+    new SubMenuItem('Meat', 'https://i.imgur.com/YkDi8Nb.jpg', 2000, 'periam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis'),
+  ];
+
+  fancyHorizontalMenuItems: SubMenuItem[] = [
+    new SubMenuItem('12" Pizza', 'https://i.imgur.com/Aowufa1.jpg', 1000, 'Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis'),
+    new SubMenuItem('Meat', 'https://i.imgur.com/YkDi8Nb.jpg', 2000, 'periam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis'),
+    new SubMenuItem('12" Pizza', 'https://i.imgur.com/Aowufa1.jpg', 1000, 'Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis'),
+    new SubMenuItem('Meat', 'https://i.imgur.com/YkDi8Nb.jpg', 2000, 'periam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis'),
+    new SubMenuItem('12" Pizza', 'https://i.imgur.com/Aowufa1.jpg', 1000, 'Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis'),
+    new SubMenuItem('Meat', 'https://i.imgur.com/YkDi8Nb.jpg', 2000, 'periam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis'),
+  ];
+
   title: string;
 
   constructor(private activatedRoute: ActivatedRoute) {

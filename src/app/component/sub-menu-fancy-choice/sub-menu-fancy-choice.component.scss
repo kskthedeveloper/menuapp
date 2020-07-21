@@ -1,0 +1,42 @@
+.single_menu {
+  position: relative;
+  margin-bottom: 30px;
+  transition: .3s;
+  padding: 5px;
+  border-bottom: 1px solid rgb(91, 91, 91);
+}
+
+.single_menu img {
+  width: 45%;
+  position: absolute;
+  height: 180px;
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  transition: .3s;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.menu_content {
+  padding-left: 200px;
+  color: white;
+}
+.menu_content h4 {
+  font-size: 25px;
+  font-weight: 300;
+  border-bottom: 1px dashed #c0392b;
+  line-height: 2;
+  text-transform: capitalize;
+}
+.menu_content h4 span {
+  font-size: 25px;
+  font-weight: 800;
+  float: right;
+  font-style: italic;
+  color: #c0392b;
+}
+.menu_content p {
+  font-weight: 200;
+  font-size: 16px;
+  letter-spacing: 1px;
+}

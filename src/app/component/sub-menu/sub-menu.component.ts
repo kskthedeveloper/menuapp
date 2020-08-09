@@ -53,7 +53,6 @@ export class SubMenuComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute) {
     this.title = this.activatedRoute.snapshot.paramMap.get('title');
     this.menu = this.newMenuItems[this.title];
-    console.log(this.menu);
   }
 
   ngOnInit(): void {

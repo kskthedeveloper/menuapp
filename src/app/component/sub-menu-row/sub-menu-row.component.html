@@ -8,7 +8,10 @@
 
     <div class="row" style="color: white;" *ngFor="let menuItem of menuItems; index as i">
 
-      <div class="sub sub-title col-6">{{menuItem.english}}</div>
+      <div class="sub sub-title col-6">
+        <div>{{menuItem.english}}</div>
+        <div *ngIf="menuItem.myanmar">({{menuItem.myanmar}})</div>
+      </div>
 <!--      <div class="sub sub-title col-4">{{menuItem.myanmar}}</div>-->
       <div class="sub dot-line col-4"></div>
       <div class="sub sub-price col-2">{{menuItem.price}}</div>

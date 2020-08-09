@@ -1,0 +1,784 @@
+[{
+    "menu": "Appertizers",
+    "submenu": [{
+      "name": "",
+      "items": [{
+          "english": "Mala French Fries",
+          "myanmar": "အာလူးကြော်",
+          "price": "3500"
+        },
+        {
+          "english": "Calamari",
+          "myanmar": "ကင်းမွန်ကြော်",
+          "price": "5000"
+        },
+        {
+          "english": "Fish Finger",
+          "myanmar": "ငါးချောင်းကြော်",
+          "price": "4500"
+        },
+        {
+          "english": "Deep Fried Soft Shell Crab",
+          "myanmar": "ဂဏန်းပျော့ကြော်",
+          "price": "7500"
+        },
+        {
+          "english": "Tempura",
+          "myanmar": "ပုဇွန်တန်ပူရာကြော်",
+          "price": "6000"
+        },
+        {
+          "english": "Stuffed Fried Potato",
+          "myanmar": "အားလူးအစာသွပ်ကြော်",
+          "price": "5900"
+        },
+        {
+          "english": "Dry Pork Fried",
+          "myanmar": "ဝက်နေလှန်းကြော်"
+        },
+        {
+          "english": "Chicken Wings with Lemon grass",
+          "myanmar": "စပါးလင်ကြက်တောင်ပံကြော်",
+          "price": "5500"
+        },
+        {
+          "english": "Cheeseball",
+          "myanmar": "ချိစ်လုံးကြော်",
+          "price": "4000"
+        },
+        {
+          "english": "Popcorn Chicken",
+          "myanmar": "popcorn ကြက်ကြော်",
+          "price": "5000"
+        },
+        {
+          "english": "Mala Fried Chicken skin",
+          "myanmar": "မာလာကြက်အရေခွံကြော်",
+          "price": "3500"
+        },
+        {
+          "english": "Deep Fried Pork Ribs",
+          "myanmar": "ဝက်နံရိုးအကြွပ်ကြော်",
+          "price": "4500"
+        }
+      ]
+    }]
+  },
+  {
+    "menu": "Salad",
+    "submenu": [{
+      "name": "",
+      "items": [{
+          "english": "Papaya Prok neck salad",
+          "myanmar": "သင်္ဘောသီး ဝက်ဂုတ်သားကင်သုတ်",
+          "price": "4900"
+        },
+        {
+          "english": "Boneless Chicken Feet Salad",
+          "myanmar": "အရိုးထုတ် ကြက်ခြေထောက်သုတ်",
+          "price": "4500"
+        },
+        {
+          "english": "Seafood Salad (Thaistyle)",
+          "myanmar": "ထိုင်းစတိုင် ပင်လယ်စာသုတ်",
+          "price": "5000"
+        },
+        {
+          "english": "Preserved Egg Salad (Yunan)",
+          "myanmar": "ယူနန်စတိုင် ကြက်ဥသုတ်",
+          "price": "2900"
+        },
+        {
+          "english": "Grill Prok neck salad",
+          "myanmar": "ဝက်ဂုတ်သားကင်သုတ်",
+          "price": "4800"
+        },
+        {
+          "english": "Dried Mutton salad",
+          "myanmar": "ဆိတ်သားမွသုတ်",
+          "price": "5000"
+        },
+        {
+          "english": "Mashed mutton with Laphet",
+          "myanmar": "ဆိတ်လက်ဖက်ထောင်း",
+          "price": "5000"
+        },
+        {
+          "english": "Prawn Salad (Thaistyle)",
+          "myanmar": "ထိုင်း စတိုင်ပုဇွန်သုတ်",
+          "price": "4800"
+        }
+      ]
+    }]
+  },
+  {
+    "menu": "Main",
+    "submenu": [{
+      "name": "",
+      "items": [{
+          "english": "Salted Egg with Squid",
+          "myanmar": "ကင်းမွန် ဘဲဥငံ",
+          "price": "6900"
+        },
+        {
+          "english": "Salted Egg with Prawn",
+          "myanmar": "ပုဇွန် ဘဲဥငံ",
+          "price": "6900"
+        },
+        {
+          "english": "Salted Egg with Soft Shell Crab",
+          "myanmar": "ဂဏန်းပျော့ဘဲဥငံ",
+          "price": "9500"
+        },
+        {
+          "english": "Belachan with Squid",
+          "myanmar": "ဘလာဂျမ်း ကင်းမွန်",
+          "price": "6900"
+        },
+        {
+          "english": "Belachan with Seafood",
+          "myanmar": "ဘလာဂျမ်း ပင်လယ်စာ",
+          "price": "6900"
+        },
+        {
+          "english": "Pork Kapao (thai basil)",
+          "myanmar": "ဝက်ကဖောင်း",
+          "price": "4900"
+        },
+        {
+          "english": "Chicken Kebab",
+          "myanmar": "ကြက်သား ခါးပါတ်",
+          "price": "4900"
+        },
+        {
+          "english": "KaungPao Chicken",
+          "myanmar": "ကြက်ကုန်းဘောင်",
+          "price": "4900"
+        },
+        {
+          "english": "3 Cup Chicken ",
+          "price": "5900"
+        },
+        {
+          "english": "Claypot Japan Tofu (C/P)",
+          "myanmar": "မြေအိုး တိုဖူး",
+          "price": "4900"
+        },
+        {
+          "english": "Yunan Chicken ",
+          "myanmar": "ကြက်ယူနန်",
+          "price": "5500"
+        },
+        {
+          "english": "Claypot Pork Belly",
+          "myanmar": "ဝက်သုံးထပ်သား မြေအိုး",
+          "price": "5500"
+        },
+        {
+          "english": "Deep Fried Pork Ribs with ABC sauce",
+          "myanmar": "ဘီယာ ဝက်နံရိုးကြော်",
+          "price": "5800"
+        },
+        {
+          "english": "Spicy Lemon Steam Fish",
+          "myanmar": "ငါးသံပုရာပေါင်း",
+          "price": "9900"
+        },
+        {
+          "english": "Aji's Grill Fish with Aluminium Foil",
+          "myanmar": "Aji's ငါးခဲပါတ်ကင်",
+          "price": "9900"
+        },
+        {
+          "english": "Thai Curry Shrimp with Egg",
+          "myanmar": "ပုဇွန်ကြက်ဥချက်",
+          "price": "5900"
+        },
+        {
+          "english": "Deep Fried Prawn with Mayonese",
+          "myanmar": "ကြက်ဥပုဇွန် ထိုင်းကာရီ",
+          "price": "5900"
+        },
+        {
+          "english": "Spicy Deep Fried Eel",
+          "myanmar": "ငါးရှဉ့်ခြောက်စပ်",
+          "price": "5500"
+        },
+        {
+          "english": "Claypot Eel",
+          "myanmar": "ငါးရှဉ့်မြေအိုး",
+          "price": "5500"
+        },
+        {
+          "english": "Spicy Sour Eel",
+          "myanmar": "ငါးရှဉ့် ချဉ် စပ်",
+          "price": "5500"
+        }
+      ]
+    }]
+  },
+  {
+    "menu": "Vege",
+    "submenu": [{
+      "name": "",
+      "items": [{
+          "english": "Fried Watergrass (Normal, Spicy, Mushroom)",
+          "myanmar": "ကန်စွန်ရွက်ကြော်(ပုံမှန်/အစပ်/မှို)",
+          "price": "3500"
+        },
+        {
+          "english": "Crisp Pork Kai Lan",
+          "myanmar": "ဝက် ကိုက်လန်ကြော်",
+          "price": "5000"
+        },
+        {
+          "english": "Mixed Vege ",
+          "myanmar": "အစိမ်းကြော်",
+          "price": "3500"
+        },
+        {
+          "english": "Brocoli Prawn",
+          "myanmar": "ပုဇွန် ပန်းပွင့်စိမ်း",
+          "price": "4500"
+        }
+      ]
+    }]
+  },
+  {
+    "menu": "Soup",
+    "submenu": [{
+      "name": "",
+      "items": [{
+          "english": "Tom Yum (C/P)",
+          "myanmar": "ကြက်တုံယမ်း",
+          "price": "4500"
+        },
+        {
+          "english": "Tom Yum (Seafood)",
+          "myanmar": "ပင်လယ်စာ တုံယမ်း",
+          "price": "5500"
+        },
+        {
+          "english": "Tofu Japan (C/P)",
+          "myanmar": "ဂျပန် တို့ဖူး တုံယမ်း",
+          "price": "4800"
+        },
+        {
+          "english": "Farmer ",
+          "price": "5500"
+        }
+      ]
+    }]
+  },
+  {
+    "menu": "Stir Fried",
+    "submenu": [{
+      "name": "",
+      "items": [{
+          "english": "Steam Rice",
+          "myanmar": "ထမင်း",
+          "price": "3000"
+        },
+        {
+          "english": "Steam Rice (Seafood)",
+          "myanmar": "ပင်လယ်စာ ထမင်းပေါင်း",
+          "price": "3500"
+        },
+        {
+          "english": "Tom Yum Fried Rice (C/P)",
+          "myanmar": "ကြက် တုံယမ်း ထမင်းကြော်",
+          "price": "3000"
+        },
+        {
+          "english": "Tom Yum Fried Rice (Seafood)",
+          "myanmar": "ပင်လယ်စာ တုံယမ်း ထမင်းကြော်",
+          "price": "3500"
+        },
+        {
+          "english": "Thai Shrimp Paste Fried Rice",
+          "myanmar": "ထိုင်းငါးပိထမင်းကြော်",
+          "price": "3500"
+        },
+        {
+          "english": "Crab Meat Fried Rice",
+          "myanmar": "ဂဏန်းပျော့ ထမင်းကြော်",
+          "price": "3500"
+        },
+        {
+          "english": "Mala Fried Rice (C/P)",
+          "myanmar": "ကြက် မာလာထမင်းကြော်",
+          "price": "3000"
+        },
+        {
+          "english": "Mala Fried Rice (Seafood)",
+          "myanmar": "ပင်လယ်စာ မာလာထမင်းကြော်",
+          "price": "3500"
+        },
+        {
+          "english": "Flat Noodle (C/P)",
+          "myanmar": "ကြက်ဆန်ပြားကြော်",
+          "price": "3000"
+        },
+        {
+          "english": "Flat Noodle (Seafood)",
+          "price": "3500"
+        }
+      ]
+    }]
+  },
+  {
+    "menu": "BBQ",
+    "submenu": [{
+        "name": "Pork",
+        "items": [{
+            "english": "Pork Neck",
+            "myanmar": "ဝက်ဂုတ်သား",
+            "price": "1000"
+          },
+          {
+            "english": "Porkbelly",
+            "myanmar": "ဝက် သုံးထပ်သား",
+            "price": "1000"
+          },
+          {
+            "english": "Bacon wrapped Enoki",
+            "myanmar": "အပ်မှို သုံးထပ်သား",
+            "price": "1200"
+          },
+          {
+            "english": "Small Intestine",
+            "myanmar": "ဝက် အူချို ",
+            "price": "1000"
+          },
+          {
+            "english": "Ear",
+            "myanmar": "ဝက်နားရွက်",
+            "price": "1000"
+          },
+          {
+            "english": "Tongue",
+            "myanmar": "ဝက် လျှာ",
+            "price": "1000"
+          },
+          {
+            "english": "Breast",
+            "myanmar": "နို့အုံသား",
+            "price": "1000"
+          },
+          {
+            "english": "Large Intestine",
+            "myanmar": "ဝက်အူမ",
+            "price": "1000"
+          }
+        ]
+      },
+      {
+        "name": "Chicken",
+        "items": [{
+            "english": "Chicken Wing",
+            "myanmar": "ကြက်တောင်ပံ",
+            "price": "2000"
+          },
+          {
+            "english": "Chicken Liver ",
+            "myanmar": "ကြက်အသည်း",
+            "price": "800"
+          },
+          {
+            "english": "Gizzard",
+            "myanmar": "ကြက် အမြစ်",
+            "price": "800"
+          },
+          {
+            "english": "Chicken Buttocks",
+            "myanmar": "ကြက်ဆီဖူး",
+            "price": "800"
+          },
+          {
+            "english": "Chicken Skin",
+            "myanmar": "ကြက်အရေခွံ",
+            "price": "800"
+          },
+          {
+            "english": "Egg",
+            "myanmar": "ကြက်ဥ",
+            "price": "800"
+          },
+          {
+            "english": "Chicken ball",
+            "myanmar": "ကြက်ကျောလုံး",
+            "price": "600"
+          },
+          {
+            "english": "Sliced Chicken wrapperd Enoki",
+            "myanmar": "အပ်မှို ကြက်သားပြား",
+            "price": "1000"
+          }
+        ]
+      },
+      {
+        "name": "Seafood",
+        "items": [{
+            "english": "Fish",
+            "myanmar": "ငါးကင်",
+            "price": "9900"
+          },
+          {
+            "english": "Prawn",
+            "myanmar": "ပုဇွန်ကင်",
+            "price": "1800"
+          },
+          {
+            "english": "Squid",
+            "myanmar": "ပြည်ကြီးငါးကင်",
+            "price": "2500"
+          },
+          {
+            "english": "Otopus",
+            "myanmar": "ရေဘဝဲကင်",
+            "price": "1500"
+          }
+        ]
+      },
+      {
+        "name": "Vege",
+        "items": [{
+            "english": "Enoki",
+            "myanmar": "အပ်မှို",
+            "price": "1500"
+          },
+          {
+            "english": "Potato",
+            "myanmar": "အာလူး",
+            "price": "700"
+          },
+          {
+            "english": "Ladyfinger ",
+            "myanmar": "ရုံးပဒေသီး",
+            "price": "700"
+          },
+          {
+            "english": "Quail Egg",
+            "myanmar": "ငုံးဥ",
+            "price": "700"
+          },
+          {
+            "english": "Corn",
+            "myanmar": "ပြောင်းဖူး",
+            "price": "1500"
+          },
+          {
+            "english": "Lotus Root",
+            "myanmar": "ကြာစွယ်",
+            "price": "700"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "menu": "Cocktail",
+    "submenu": [{
+        "name": "Aji's Special",
+        "items": [{
+            "english": "Titanic",
+            "price": "5000"
+          },
+          {
+            "english": "Japannese Slipper",
+            "price": "5000"
+          },
+          {
+            "english": "Illusion",
+            "price": "5000"
+          },
+          {
+            "english": "Gloria",
+            "price": "5000"
+          },
+          {
+            "Submenu": "Vodka"
+          },
+          {
+            "english": "Ak47",
+            "price": "5000"
+          },
+          {
+            "english": "Harvey Wall Banger",
+            "price": "5000"
+          },
+          {
+            "english": "Long Island Ice Tea",
+            "price": "5000"
+          },
+          {
+            "english": "Magarita ",
+            "price": "5000"
+          },
+          {
+            "english": "Scredriver",
+            "price": "5000"
+          }
+        ]
+      },
+      {
+        "name": "Vodka",
+        "items": [{
+            "english": "Ak47",
+            "price": "5000"
+          },
+          {
+            "english": "Harvey Wall Banger",
+            "price": "5000"
+          },
+          {
+            "english": "Long Island Ice Tea",
+            "price": "5000"
+          },
+          {
+            "english": "Magarita ",
+            "price": "5000"
+          },
+          {
+            "english": "Scredriver",
+            "price": "5000"
+          }
+        ]
+      },
+      {
+        "name": "Tequila",
+        "items": [{
+            "english": "Tequila Collin's",
+            "price": "5000"
+          },
+          {
+            "english": "Jalapa ",
+            "price": "5000"
+          },
+          {
+            "english": "Mexican Dream",
+            "price": "5000"
+          },
+          {
+            "english": "Bluemoon",
+            "price": "5000"
+          }
+        ]
+      },
+      {
+        "name": "Brandy",
+        "items": [{
+            "english": "Brandy Alexander",
+            "price": "5000"
+          },
+          {
+            "english": "Scorpion",
+            "price": "5000"
+          }
+        ]
+      },
+      {
+        "name": "Gin",
+        "items": [{
+            "english": "Singapore Sling",
+            "price": "5000"
+          },
+          {
+            "english": "Negroni",
+            "price": "5000"
+          },
+          {
+            "english": "Paradise Ahoy",
+            "price": "5000"
+          },
+          {
+            "english": "Classic Martini",
+            "price": "5000"
+          },
+          {
+            "english": "Lychee Martini",
+            "price": "5000"
+          },
+          {
+            "english": "Sweet Martini",
+            "price": "5000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "menu": "Rum",
+    "submenu": [{
+      "name": "",
+      "items": [{
+          "english": "Mojito",
+          "price": "5000"
+        },
+        {
+          "english": "Pina Colada",
+          "price": "5000"
+        },
+        {
+          "english": "Flying Kangaroo",
+          "price": "5000"
+        },
+        {
+          "english": "Caipirinha",
+          "price": "5000"
+        },
+        {
+          "english": "Sex on the beach",
+          "price": "5000"
+        },
+        {
+          "english": "Black Russian",
+          "price": "5000"
+        },
+        {
+          "english": "White Russian",
+          "price": "5000"
+        }
+      ]
+    }]
+  },
+  {
+    "menu": "Whiskey",
+    "submenu": [{
+      "name": "",
+      "items": [{
+          "english": "Old Fashioned",
+          "price": "5000"
+        },
+        {
+          "english": "Mahantton",
+          "price": "5000"
+        },
+        {
+          "Menu": "Flaming Cocktail"
+        },
+        {
+          "english": "Flying Lamboghini ",
+          "price": "5000"
+        },
+        {
+          "english": "Mexican Flaming ",
+          "price": "5000"
+        },
+        {
+          "english": "Flaming Latin Lover",
+          "price": "5000"
+        }
+      ]
+    }]
+  },
+  {
+    "menu": "Flaming Cocktail",
+    "submenu": [{
+      "name": "",
+      "items": [{
+          "english": "Flying Lamboghini ",
+          "price": "5000"
+        },
+        {
+          "english": "Mexican Flaming ",
+          "price": "5000"
+        },
+        {
+          "english": "Flaming Latin Lover",
+          "price": "5000"
+        }
+      ]
+    }]
+  },
+  {
+    "menu": "Shot",
+    "submenu": [{
+      "name": "",
+      "items": [{
+          "english": "Tequila",
+          "price": "2000"
+        },
+        {
+          "english": "Jim Beam",
+          "price": "2000"
+        },
+        {
+          "english": "Vodka",
+          "price": "2000"
+        },
+        {
+          "english": "Jack Daniel",
+          "price": "2000"
+        },
+        {
+          "english": "B - 52",
+          "price": "2000"
+        },
+        {
+          "english": "Blow Job",
+          "price": "2000"
+        },
+        {
+          "english": "Slippery Nipple",
+          "price": "2000"
+        },
+        {
+          "english": "Lemon Drop",
+          "price": "2000"
+        },
+        {
+          "english": "Tequila (with any mixer)",
+          "price": "3000"
+        },
+        {
+          "english": "Jim Beam (with any mixer)",
+          "price": "3000"
+        },
+        {
+          "english": "Vodka (with any mixer)",
+          "price": "3000"
+        },
+        {
+          "english": "Jack Daniel (with any mixer)",
+          "price": "3000"
+        },
+        {
+          "english": "6 Shot (any combination)",
+          "price": "11900"
+        }
+      ]
+    }]
+  },
+  {
+    "menu": "Beer",
+    "submenu": [{
+      "name": "",
+      "items": [{
+          "english": "Draught",
+          "price": "2000"
+        },
+        {
+          "english": "Tiger bottle",
+          "price": "2000"
+        },
+        {
+          "english": "Crystal bottle (330 ml)",
+          "price": "2500"
+        },
+        {
+          "english": "myanmar bottle (330 ml)",
+          "price": "2500"
+        },
+        {
+          "english": "Corona Extra",
+          "price": "2500"
+        },
+        {
+          "english": "Budweiser",
+          "price": "2500"
+        }
+      ]
+    }]
+  }
+]

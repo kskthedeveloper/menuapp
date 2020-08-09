@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MenuItem} from '../../models/menu-item';
+import {Menu} from "../../models/menu";
+import menulist from "../../_files/menulist.json";
 
 @Component({
   selector: 'app-home',
@@ -19,6 +21,8 @@ export class HomeComponent implements OnInit {
     new MenuItem('Menu7', 'https://www.delonghi.com/Global/recipes/multifry/97.jpg'),
     new MenuItem('Menu8', 'https://www.delonghi.com/Global/recipes/multifry/97.jpg'),
   ];
+
+  newMenuItems: Menu[] = menulist;
 
   constructor() { }
 

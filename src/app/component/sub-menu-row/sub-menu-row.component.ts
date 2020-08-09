@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SubMenuItem } from 'src/app/models/sub-menu-item';
+import {SubMenu} from "../../models/sub-menu";
+import {Item} from "../../models/item";
 
 @Component({
   selector: 'app-sub-menu-row',
@@ -9,7 +11,7 @@ import { SubMenuItem } from 'src/app/models/sub-menu-item';
 export class SubMenuRowComponent implements OnInit {
 
   @Input() subTitle: string;
-  @Input() menuItems: SubMenuItem[];
+  @Input() menuItems: Item[];
 
   constructor() { }
 

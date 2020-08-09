@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SubMenuItem } from 'src/app/models/sub-menu-item';
 import { faHome, faAngleDoubleLeft  } from '@fortawesome/free-solid-svg-icons';
+import {SubMenu} from "../../models/sub-menu";
+import {Menu} from "../../models/menu";
+import menulist from "../../_files/menulist.json";
 
 @Component({
   selector: 'app-sub-menu',
@@ -9,6 +12,9 @@ import { faHome, faAngleDoubleLeft  } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./sub-menu.component.scss']
 })
 export class SubMenuComponent implements OnInit {
+
+  newMenuItems: Menu[] = menulist;
+  menu: Menu;
 
   faCoffee = faAngleDoubleLeft ;
 
@@ -46,6 +52,8 @@ export class SubMenuComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute) {
     this.title = this.activatedRoute.snapshot.paramMap.get('title');
+    this.menu = this.newMenuItems[this.title];
+    console.log(this.menu);
   }
 
   ngOnInit(): void {

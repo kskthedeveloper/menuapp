@@ -7,22 +7,26 @@
 <div class="container">
 
   <div class="row menu-title">
-    <h2 style="color: white">{{title}}</h2>
+    <h2 style="color: white">{{menu.menu}}</h2>
   </div>
 
-  <app-sub-menu-choice subTitle="AJI'S CHOICE" [menuItems]="fmenuItems"></app-sub-menu-choice>
+<!--  <app-sub-menu-choice subTitle="AJI'S CHOICE" [menuItems]="fmenuItems"></app-sub-menu-choice>-->
 
-  <div style="margin: 20px;"></div>
-  <app-sub-menu-row subTitle="CHICKEN" [menuItems]="smenuItems"></app-sub-menu-row>
+<!--  <div style="margin: 20px;"></div>-->
+<!--  <app-sub-menu-row subTitle="CHICKEN" [menuItems]="smenuItems"></app-sub-menu-row>-->
 
-  <div style="margin: 20px;"></div>
-  <app-sub-menu-fancy-choice subTitle="FANCY CHOICE" [menuItems]="fancyMenuItems"></app-sub-menu-fancy-choice>
+  <div *ngFor="let subMenu of menu.submenu">
+      <app-sub-menu-row subTitle="{{subMenu.name}}" [menuItems]="subMenu.items"></app-sub-menu-row>
+  </div>
 
-  <div style="margin: 20px;"></div>
-  <app-sub-menu-vertical-large-card subTitle="VERTICAL CARD CHOICE" [menuItems]="fancyMenuItems"></app-sub-menu-vertical-large-card>
+<!--  <div style="margin: 20px;"></div>-->
+<!--  <app-sub-menu-fancy-choice subTitle="FANCY CHOICE" [menuItems]="fancyMenuItems"></app-sub-menu-fancy-choice>-->
 
-  <div style="margin: 20px;"></div>
-  <app-sub-menu-horizontal-large-card subTitle="HORIZONTAL CHOICE" [menuItems]="fancyHorizontalMenuItems"></app-sub-menu-horizontal-large-card>
+<!--  <div style="margin: 20px;"></div>-->
+<!--  <app-sub-menu-vertical-large-card subTitle="VERTICAL CARD CHOICE" [menuItems]="fancyMenuItems"></app-sub-menu-vertical-large-card>-->
+
+<!--  <div style="margin: 20px;"></div>-->
+<!--  <app-sub-menu-horizontal-large-card subTitle="HORIZONTAL CHOICE" [menuItems]="fancyHorizontalMenuItems"></app-sub-menu-horizontal-large-card>-->
 
 
 </div>

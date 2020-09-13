@@ -5,6 +5,8 @@ import { faHome, faAngleDoubleLeft  } from '@fortawesome/free-solid-svg-icons';
 import {SubMenu} from "../../models/sub-menu";
 import {Menu} from "../../models/menu";
 import menulist from "../../_files/menulist.json";
+import {AngularFirestore} from '@angular/fire/firestore';
+import {map} from 'rxjs/operators';
 
 @Component({
   selector: 'app-sub-menu',
@@ -15,6 +17,9 @@ export class SubMenuComponent implements OnInit {
 
   newMenuItems: Menu[] = menulist;
   menu: Menu;
+
+  imageObject: Array<object> = [
+  ]
 
   faCoffee = faAngleDoubleLeft ;
 
@@ -50,9 +55,31 @@ export class SubMenuComponent implements OnInit {
 
   title: string;
 
-  constructor(private activatedRoute: ActivatedRoute) {
+  constructor(private activatedRoute: ActivatedRoute,  private db: AngularFirestore,) {
     this.title = this.activatedRoute.snapshot.paramMap.get('title');
     this.menu = this.newMenuItems[this.title];
+    this.db.collection('menus').doc(this.title).snapshotChanges()
+      .pipe(map((result) => {
+          const data = result.payload.data()['imagePaths'];
+        data.forEach((imagePath, index) => {
+            // if(index == 0) {
+            //   this.imageObject.push(
+            //     {
+            //       image: imagePath,
+            //       thumbImage: imagePath
+            //     }
+            //   );
+            // }
+            this.imageObject.push(
+              {
+                image: imagePath,
+                thumbImage: imagePath
+              }
+            );
+          });
+      })).subscribe();
+
+
   }
 
   ngOnInit(): void {

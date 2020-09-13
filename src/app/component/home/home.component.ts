@@ -29,16 +29,15 @@ export class HomeComponent implements OnInit {
     this.db.collection('menus').doc('Home').snapshotChanges()
       .pipe(map((result) => {
           const data = result.payload.data()['imagePaths'];
-          console.log(data);
         data.forEach((imagePath, index) => {
-            if(index == 0) {
-              this.imageObject.push(
-                {
-                  image: imagePath,
-                  thumbImage: imagePath
-                }
-              );
-            }
+            // if(index == 0) {
+            //   this.imageObject.push(
+            //     {
+            //       image: imagePath,
+            //       thumbImage: imagePath
+            //     }
+            //   );
+            // }
             this.imageObject.push(
               {
                 image: imagePath,

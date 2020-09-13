@@ -15,7 +15,7 @@
 
 <!--    </div>-->
 <!--  </div>-->
-    <ng-image-slider
+    <ng-image-slider *ngIf="imageObject.length > 0"
       [images]="imageObject"
       [imageSize]="{width: 400, height: 300, space: 4}"
       [infinite]="true"

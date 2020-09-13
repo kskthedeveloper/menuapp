@@ -495,29 +495,6 @@
           {
             "english": "Gloria",
             "price": "5000"
-          },
-          {
-            "Submenu": "Vodka"
-          },
-          {
-            "english": "Ak47",
-            "price": "5000"
-          },
-          {
-            "english": "Harvey Wall Banger",
-            "price": "5000"
-          },
-          {
-            "english": "Long Island Ice Tea",
-            "price": "5000"
-          },
-          {
-            "english": "Magarita ",
-            "price": "5000"
-          },
-          {
-            "english": "Scredriver",
-            "price": "5000"
           }
         ]
       },
@@ -604,151 +581,128 @@
             "price": "5000"
           }
         ]
+      },
+      {
+        "name": "Rum",
+        "items": [
+          {
+            "english": "Mojito",
+            "price": "5000"
+          },
+          {
+            "english": "Pina Colada",
+            "price": "5000"
+          },
+          {
+            "english": "Flying Kangaroo",
+            "price": "5000"
+          },
+          {
+            "english": "Caipirinha",
+            "price": "5000"
+          },
+          {
+            "english": "Sex on the beach",
+            "price": "5000"
+          },
+          {
+            "english": "Black Russian",
+            "price": "5000"
+          },
+          {
+            "english": "White Russian",
+            "price": "5000"
+          }
+        ]
+      },
+      {
+        "name": "Whiskey",
+        "items": [
+          {
+            "english": "Old Fashioned",
+            "price": "5000"
+          },
+          {
+            "english": "Mahanttan",
+            "price": "5000"
+          }
+        ]
+      },
+      {
+        "name": "Flaming Cocktail",
+        "items": [
+          {
+            "english": "Flying Lamboghini ",
+            "price": "5000"
+          },
+          {
+            "english": "Mexican Flaming ",
+            "price": "5000"
+          },
+          {
+            "english": "Flaming Latin Lover",
+            "price": "5000"
+          }
+        ]
+      },
+      {
+        "name": "Shot",
+        "items": [
+          {
+            "english": "Tequila",
+            "price": "2000"
+          },
+          {
+            "english": "Jim Beam",
+            "price": "2000"
+          },
+          {
+            "english": "Vodka",
+            "price": "2000"
+          },
+          {
+            "english": "Jack Daniel",
+            "price": "2000"
+          },
+          {
+            "english": "B - 52",
+            "price": "2000"
+          },
+          {
+            "english": "Blow Job",
+            "price": "2000"
+          },
+          {
+            "english": "Slippery Nipple",
+            "price": "2000"
+          },
+          {
+            "english": "Lemon Drop",
+            "price": "2000"
+          },
+          {
+            "english": "Tequila (with any mixer)",
+            "price": "3000"
+          },
+          {
+            "english": "Jim Beam (with any mixer)",
+            "price": "3000"
+          },
+          {
+            "english": "Vodka (with any mixer)",
+            "price": "3000"
+          },
+          {
+            "english": "Jack Daniel (with any mixer)",
+            "price": "3000"
+          },
+          {
+            "english": "6 Shot (any combination)",
+            "price": "11900"
+          }
+        ]
       }
     ]
-  },
-  {
-    "menu": "Rum",
-    "submenu": [{
-      "name": "",
-      "items": [{
-          "english": "Mojito",
-          "price": "5000"
-        },
-        {
-          "english": "Pina Colada",
-          "price": "5000"
-        },
-        {
-          "english": "Flying Kangaroo",
-          "price": "5000"
-        },
-        {
-          "english": "Caipirinha",
-          "price": "5000"
-        },
-        {
-          "english": "Sex on the beach",
-          "price": "5000"
-        },
-        {
-          "english": "Black Russian",
-          "price": "5000"
-        },
-        {
-          "english": "White Russian",
-          "price": "5000"
-        }
-      ]
-    }]
-  },
-  {
-    "menu": "Whiskey",
-    "submenu": [{
-      "name": "",
-      "items": [{
-          "english": "Old Fashioned",
-          "price": "5000"
-        },
-        {
-          "english": "Mahantton",
-          "price": "5000"
-        },
-        {
-          "Menu": "Flaming Cocktail"
-        },
-        {
-          "english": "Flying Lamboghini ",
-          "price": "5000"
-        },
-        {
-          "english": "Mexican Flaming ",
-          "price": "5000"
-        },
-        {
-          "english": "Flaming Latin Lover",
-          "price": "5000"
-        }
-      ]
-    }]
-  },
-  {
-    "menu": "Flaming Cocktail",
-    "submenu": [{
-      "name": "",
-      "items": [{
-          "english": "Flying Lamboghini ",
-          "price": "5000"
-        },
-        {
-          "english": "Mexican Flaming ",
-          "price": "5000"
-        },
-        {
-          "english": "Flaming Latin Lover",
-          "price": "5000"
-        }
-      ]
-    }]
-  },
-  {
-    "menu": "Shot",
-    "submenu": [{
-      "name": "",
-      "items": [{
-          "english": "Tequila",
-          "price": "2000"
-        },
-        {
-          "english": "Jim Beam",
-          "price": "2000"
-        },
-        {
-          "english": "Vodka",
-          "price": "2000"
-        },
-        {
-          "english": "Jack Daniel",
-          "price": "2000"
-        },
-        {
-          "english": "B - 52",
-          "price": "2000"
-        },
-        {
-          "english": "Blow Job",
-          "price": "2000"
-        },
-        {
-          "english": "Slippery Nipple",
-          "price": "2000"
-        },
-        {
-          "english": "Lemon Drop",
-          "price": "2000"
-        },
-        {
-          "english": "Tequila (with any mixer)",
-          "price": "3000"
-        },
-        {
-          "english": "Jim Beam (with any mixer)",
-          "price": "3000"
-        },
-        {
-          "english": "Vodka (with any mixer)",
-          "price": "3000"
-        },
-        {
-          "english": "Jack Daniel (with any mixer)",
-          "price": "3000"
-        },
-        {
-          "english": "6 Shot (any combination)",
-          "price": "11900"
-        }
-      ]
-    }]
   },
   {
     "menu": "Beer",

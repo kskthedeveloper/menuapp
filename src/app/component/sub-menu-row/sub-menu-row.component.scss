@@ -12,11 +12,11 @@
 }
 
 .sub-price {
-  text-align: right;
+  text-align: left;
 }
 
 .dot-line {
-  border-bottom: dotted white 1px;
+  //border-bottom: dotted white 1px;
 }
 
 .wrapper {
@@ -33,4 +33,8 @@
 
 .foreground {
   backdrop-filter: blur(10px);
+}
+
+.row-container {
+  margin-bottom: 15px;
 }

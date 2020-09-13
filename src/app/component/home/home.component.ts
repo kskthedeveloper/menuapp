@@ -2,6 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {MenuItem} from '../../models/menu-item';
 import {Menu} from "../../models/menu";
 import menulist from "../../_files/menulist.json";
+import { DataService } from 'src/app/service/data.service';
+import {AngularFirestore} from '@angular/fire/firestore';
+import {ActivatedRoute} from '@angular/router';
+import {AngularFireStorage} from '@angular/fire/storage';
+import {map} from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
@@ -11,22 +16,45 @@ import menulist from "../../_files/menulist.json";
 
 export class HomeComponent implements OnInit {
 
-  menuItems: MenuItem[] = [
-    new MenuItem('Appetizers', 'https://www.delonghi.com/Global/recipes/multifry/97.jpg'),
-    new MenuItem('Sides', 'https://www.delonghi.com/Global/recipes/multifry/97.jpg'),
-    new MenuItem('Barbecue', 'https://www.delonghi.com/Global/recipes/multifry/97.jpg'),
-    new MenuItem('Main Dishes', 'https://www.delonghi.com/Global/recipes/multifry/97.jpg'),
-    new MenuItem('Lunch Set', 'https://www.delonghi.com/Global/recipes/multifry/97.jpg'),
-    new MenuItem('Drinks', 'https://www.delonghi.com/Global/recipes/multifry/97.jpg'),
-    new MenuItem('Menu7', 'https://www.delonghi.com/Global/recipes/multifry/97.jpg'),
-    new MenuItem('Menu8', 'https://www.delonghi.com/Global/recipes/multifry/97.jpg'),
+  imageObject: Array<object> = [
   ];
 
-  newMenuItems: Menu[] = menulist;
+  // newMenuItems: Menu[] = menulist;
+  newMenuItems: Menu[];
 
-  constructor() { }
+  constructor(private dataService: DataService,
+              private db: AngularFirestore,
+              private activatedRoute: ActivatedRoute,
+              private storage: AngularFireStorage) {
+    this.db.collection('menus').doc('Home').snapshotChanges()
+      .pipe(map((result) => {
+          const data = result.payload.data()['imagePaths'];
+          console.log(data);
+        data.forEach((imagePath, index) => {
+            if(index == 0) {
+              this.imageObject.push(
+                {
+                  image: imagePath,
+                  thumbImage: imagePath
+                }
+              );
+            }
+            this.imageObject.push(
+              {
+                image: imagePath,
+                thumbImage: imagePath
+              }
+            );
+          });
+      })).subscribe();
+
+    console.log(this.imageObject);
+  }
 
   ngOnInit(): void {
+    this.dataService.parseData().then(data => {
+      this.newMenuItems = data;
+    });
   }
 
   toSubMenu(title: string) {

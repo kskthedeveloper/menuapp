@@ -1,0 +1,26 @@
+<p>admin-dashboard works!</p>
+<button (click)="logout()">logout</button>
+
+
+
+<div class="wrapper">
+  <div class="row h-100">
+    <div class="col-8 my-auto">
+      <img class="res-logo" src="/assets/chara.png" alt="">
+    </div>
+
+    <div class="col-4 my-auto">
+      <button class="btn btn-block btn-dark rounded-pill">
+        <a [routerLink]="['/admin-edit/Home']">
+          <pre style="color: white">{{ "Home" }}</pre>
+        </a>
+      </button>
+
+        <button *ngFor="let menu of menus" class="btn btn-block btn-dark rounded-pill">
+          <a [routerLink]="['/admin-edit', menu.menu]">
+            <pre style="color: white">{{ menu.menu }}</pre>
+          </a>
+        </button>
+    </div>
+  </div>
+</div>

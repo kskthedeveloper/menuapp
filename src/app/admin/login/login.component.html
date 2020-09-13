@@ -1,0 +1,21 @@
+<div class="wrapper">
+  <div class="row h-100">
+    <div class="col-8 my-auto">
+      <img class="res-logo" src="/assets/chara.png" alt="">
+    </div>
+    <div class="col-4 my-auto">
+          <div class="card border-0" style="background: transparent">
+            <div class="card-header">WELCOME !!</div>
+            <div class="card-body">
+              <p>Please log in to manage your menu.</p>
+              <br>
+                  <form>
+                    <input type="text" class="form-control mb-2" name="email"  id="email" [(ngModel)]="email" placeholder="Email" required autofocus>
+                    <input type="password" class="form-control mb-2" name="pasword" id="password" [(ngModel)]="password" placeholder="Password" required>
+                    <button class="btn btn-lg btn-block mb-1" (click)="login($event)" type="submit">Login</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

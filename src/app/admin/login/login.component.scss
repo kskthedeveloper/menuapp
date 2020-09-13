@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+//html, body {
+//  height: 100%;
+//}
+
+.wrapper {
+  height: 1000px;
+  margin: 0 auto -20px;
+  background-color: #9B9B9B;
+}
+
+.footer, .push {
+  height: 20px;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.res-logo {
+  display: block;
+  margin: 0px auto;
+}
+

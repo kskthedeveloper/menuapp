@@ -12,6 +12,17 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SubMenuFancyChoiceComponent } from './component/sub-menu-fancy-choice/sub-menu-fancy-choice.component';
 import { SubMenuHorizontalLargeCardComponent } from './component/sub-menu-horizontal-large-card/sub-menu-horizontal-large-card.component';
 import { SubMenuVerticalLargeCardComponent } from './component/sub-menu-vertical-large-card/sub-menu-vertical-large-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AdminDashboardComponent } from './component/admin-dashboard/admin-dashboard.component';
+import {AngularFireModule} from '@angular/fire';
+import {environment} from '../environments/environment';
+import { AdminDashboardEditComponent } from './component/admin-dashboard-edit/admin-dashboard-edit.component';
+import {AngularFireStorageModule} from '@angular/fire/storage';
+import {AngularFirestore, AngularFirestoreModule} from '@angular/fire/firestore';
+import { NgImageSliderModule } from 'ng-image-slider';
+import {AngularFireAuthModule} from '@angular/fire/auth';
+import { LoginComponent } from './admin/login/login.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,15 +33,25 @@ import { SubMenuVerticalLargeCardComponent } from './component/sub-menu-vertical
     SubMenuChoiceComponent,
     SubMenuFancyChoiceComponent,
     SubMenuHorizontalLargeCardComponent,
-    SubMenuVerticalLargeCardComponent
+    SubMenuVerticalLargeCardComponent,
+    AdminDashboardComponent,
+    AdminDashboardEditComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireAuthModule,
+    NgImageSliderModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

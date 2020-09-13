@@ -15,7 +15,12 @@
 
 <!--    </div>-->
 <!--  </div>-->
-
+    <ng-image-slider
+      [images]="imageObject"
+      [imageSize]="{width: 400, height: 300, space: 4}"
+      [infinite]="true"
+      [autoSlide]="{interval: 1, stopOnHover: false}"
+      [showArrow]="false" #nav></ng-image-slider>
   <div class="row">
     <div class="col-12" *ngFor="let menuItem of newMenuItems; index as i">
 

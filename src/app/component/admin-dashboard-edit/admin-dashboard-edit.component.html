@@ -1,0 +1,56 @@
+
+
+<div class="wrapper">
+  <div class="row h-100">
+    <div class="col-6 my-auto">
+      <img class="res-logo" src="/assets/chara.png" alt="">
+    </div>
+
+    <div class="col-6 my-auto">
+      <div class="section">
+        <img src="{{downloadURL}}" alt="" width="250px">
+
+
+        <div class="image-input">
+          <input type="file" id="imageInput" (change)="uploadFile(1, $event)"/>
+          <label for="imageInput" class="image-button"><i class="far fa-image"></i> Choose image</label>
+          <span class="change-image">Choose different image</span>
+        </div>
+
+        <div>{{ uploadPercent | async }}</div>
+      </div>
+
+      <div class="section">
+      <img src="{{downloadURL2}}" alt="" width="250px">
+        <div class="image-input">
+          <input type="file" (change)="uploadFile(2, $event)"/>
+          <label for="imageInput" class="image-button"><i class="far fa-image"></i> Choose image</label>
+          <span class="change-image">Choose different image</span>
+        </div>
+      <div>{{ uploadPercent2  | async }}</div>
+      </div>
+
+      <div class="section">
+      <img src="{{downloadURL3}}" alt="" width="250px">
+        <div class="image-input">
+          <input type="file" (change)="uploadFile(3, $event)"/>
+          <label for="imageInput" class="image-button"><i class="far fa-image"></i> Choose image</label>
+          <span class="change-image">Choose different image</span>
+        </div>
+      <div>{{ uploadPercent3  | async}}</div>
+      </div>
+
+      <div class="section">
+      <img src="{{downloadURL4}}" alt="" width="250px">
+        <div class="image-input">
+          <input type="file" (change)="uploadFile(4, $event)"/>
+          <label for="imageInput" class="image-button"><i class="far fa-image"></i> Choose image</label>
+          <span class="change-image">Choose different image</span>
+        </div>
+      <div>{{ uploadPercent4  | async}}</div>
+      </div>
+
+      <button (click)="update()">update</button>
+    </div>
+  </div>
+</div>

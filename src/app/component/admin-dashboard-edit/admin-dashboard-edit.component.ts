@@ -37,10 +37,12 @@ export class AdminDashboardEditComponent implements OnInit {
         } else {
           const data = result.payload.data()['imagePaths'];
           console.log(data);
-          this.downloadURL =  data[0] || '';
-          this.downloadURL2 =  data[1] || '';
-          this.downloadURL3 =  data[2] || '';
-          this.downloadURL4 =  data[3] || '';
+          if ( data ) {
+            this.downloadURL =  data[0] || '';
+            this.downloadURL2 =  data[1] || '';
+            this.downloadURL3 =  data[2] || '';
+            this.downloadURL4 =  data[3] || '';
+          }
         }
       })).subscribe();
   }
@@ -54,43 +56,45 @@ export class AdminDashboardEditComponent implements OnInit {
     const task = this.storage.upload(this.menuName + '/' + file.name, file);
     const fileRef = this.storage.ref(this.menuName + '/' + file.name);
 
-    if (filePath == '1') {
+    console.log("File Path, ", filePath);
+
+    if (filePath == 1) {
       this.uploadPercent = task.percentageChanges();
     }
 
-    if (filePath == '2') {
+    if (filePath == 2) {
       this.uploadPercent2 = task.percentageChanges();
     }
 
-    if (filePath == '3') {
+    if (filePath == 3) {
       this.uploadPercent3 = task.percentageChanges();
     }
 
-    if (filePath == '4') {
+    if (filePath == 4) {
       this.uploadPercent4 = task.percentageChanges();
     }
 
     task.snapshotChanges().pipe(
       finalize(() => {
-        if (filePath == '1') {
+        if (filePath == 1) {
            fileRef.getDownloadURL().subscribe((value)=> {
              this.downloadURL = value;
            });
         }
 
-        if (filePath == '2') {
+        if (filePath == 2) {
           fileRef.getDownloadURL().subscribe((value)=> {
             this.downloadURL2 = value;
           });
         }
 
-        if (filePath == '3') {
+        if (filePath == 3) {
           fileRef.getDownloadURL().subscribe((value)=> {
             this.downloadURL3 = value;
           });
         }
 
-        if (filePath == '4') {
+        if (filePath == 4) {
           fileRef.getDownloadURL().subscribe((value)=> {
             this.downloadURL4 = value;
           });
@@ -108,6 +112,7 @@ export class AdminDashboardEditComponent implements OnInit {
         this.downloadURL4,
       ]
     }
+    console.log(test);
     this.db.collection('menus').doc(this.menuName).set(test);
   }
 }

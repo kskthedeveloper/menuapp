@@ -5,6 +5,9 @@ import { faHome, faAngleDoubleLeft  } from '@fortawesome/free-solid-svg-icons';
 import {SubMenu} from "../../models/sub-menu";
 import {Menu} from "../../models/menu";
 import menulist from "../../_files/menulist.json";
+import { AngularFirestore } from '@angular/fire/firestore';
+import { map } from 'rxjs/operators';
+import { DataService } from 'src/app/service/data.service';
 
 @Component({
   selector: 'app-sub-menu',
@@ -17,6 +20,9 @@ export class SubMenuComponent implements OnInit {
   menu: Menu;
 
   faCoffee = faAngleDoubleLeft ;
+
+  imageObject: Array<object> = [
+  ];
 
   smenuItems: SubMenuItem[] = [
     new SubMenuItem('Appetizers', 'https://www.delonghi.com/Global/recipes/multifry/97.jpg', 1000, ""),
@@ -50,9 +56,39 @@ export class SubMenuComponent implements OnInit {
 
   title: string;
 
-  constructor(private activatedRoute: ActivatedRoute) {
+  constructor(private activatedRoute: ActivatedRoute, private db: AngularFirestore, private dataService: DataService) {
     this.title = this.activatedRoute.snapshot.paramMap.get('title');
-    this.menu = this.newMenuItems[this.title];
+    // this.menu = this.newMenuItems[this.title];
+    this.menu = this.dataService.menus[this.title];
+
+    console.log(this.menu.menu);
+
+    this.db.collection('menus').doc(this.menu.menu).snapshotChanges()
+      .pipe(map((result) => {
+          const data = result.payload.data()['imagePaths'];
+          console.log(data);
+          if (data) {
+            data.forEach((imagePath, index) => {
+              // if(index == 0) {
+              //   this.imageObject.push(
+              //     {
+              //       image: imagePath,
+              //       thumbImage: imagePath
+              //     }
+              //   );
+              // }
+              if(imagePath != "") {
+                this.imageObject.push(
+                  {
+                    image: imagePath,
+                    thumbImage: imagePath
+                  }
+                );
+              }
+              
+            });
+          }
+      })).subscribe();
   }
 
   ngOnInit(): void {

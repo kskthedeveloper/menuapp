@@ -13,7 +13,7 @@
 
         <div class="image-input">
           <input type="file" id="imageInput" (change)="uploadFile(1, $event)"/>
-          <label for="imageInput" class="image-button"><i class="far fa-image"></i> Choose image</label>
+          <label for="imageInput" class="image-button"><i class="far fa-image"></i> Choose image 1</label>
           <span class="change-image">Choose different image</span>
         </div>
 
@@ -23,8 +23,8 @@
       <div class="section">
       <img src="{{downloadURL2}}" alt="" width="250px">
         <div class="image-input">
-          <input type="file" (change)="uploadFile(2, $event)"/>
-          <label for="imageInput" class="image-button"><i class="far fa-image"></i> Choose image</label>
+          <input type="file" id="imageInput2" (change)="uploadFile(2, $event)"/>
+          <label for="imageInput2" class="image-button"><i class="far fa-image"></i> Choose image 2</label>
           <span class="change-image">Choose different image</span>
         </div>
       <div>{{ uploadPercent2  | async }}</div>
@@ -33,8 +33,8 @@
       <div class="section">
       <img src="{{downloadURL3}}" alt="" width="250px">
         <div class="image-input">
-          <input type="file" (change)="uploadFile(3, $event)"/>
-          <label for="imageInput" class="image-button"><i class="far fa-image"></i> Choose image</label>
+          <input type="file" id="imageInput3" (change)="uploadFile(3, $event)"/>
+          <label for="imageInput3" class="image-button"><i class="far fa-image"></i> Choose image 3</label>
           <span class="change-image">Choose different image</span>
         </div>
       <div>{{ uploadPercent3  | async}}</div>
@@ -43,8 +43,8 @@
       <div class="section">
       <img src="{{downloadURL4}}" alt="" width="250px">
         <div class="image-input">
-          <input type="file" (change)="uploadFile(4, $event)"/>
-          <label for="imageInput" class="image-button"><i class="far fa-image"></i> Choose image</label>
+          <input type="file" id="imageInput4" (change)="uploadFile(4, $event)"/>
+          <label for="imageInput4" class="image-button"><i class="far fa-image"></i> Choose image 4</label>
           <span class="change-image">Choose different image</span>
         </div>
       <div>{{ uploadPercent4  | async}}</div>
